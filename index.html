@@ -1,8 +1,96 @@
-<html lang="en">
+
+
+
+<!DOCTYPE html>
+<html>
 <head>
-  <title>Chat de prueba</title>
+  <meta charset="UTF-8">
+  <title>Venta de Coches</title>
+  <style>
+    /* Estilos CSS básicos */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+    }
+    
+    nav {
+      background-color: #f4f4f4;
+      padding: 10px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    
+    nav ul li a {
+      color: #333;
+      text-decoration: none;
+      padding: 5px;
+    }
+    
+    nav ul li a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+    
+    main {
+      padding: 20px;
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .car-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+    }
+    
+    .car-card {
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    
+    .car-card h3 {
+      margin-top: 0;
+    }
+    
+    .car-card img {
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+    
+    .car-card p {
+      margin-top: 0;
+    }
+  </style>
 </head>
 <body>
+	
 <script type='text/javascript' src='https://service.force.com/embeddedservice/menu/fab.min.js'></script>
 <style>
 .embedded-service .fab div[class="icon_fab_container"] > img.esw-custom_icon{
@@ -69,5 +157,46 @@ if (!window.embedded_svc || !window.embedded_svc.menu) {
     initESW('https://service.force.com');
 }
 </script>
+  <header>
+    <h1>Venta de Coches</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Coches</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <h2>Bienvenido a nuestra página de venta de coches</h2>
+    <p>Aquí podrás encontrar una amplia selección de coches nuevos y usados.</p>
+    
+    <div class="car-list">
+      <div class="car-card">
+        <h3>Coche 1</h3>
+        <img src="ruta_de_la_imagen_del_coche_1.jpg" alt="Coche 1">
+        <p>Descripción del coche 1.</p>
+        <p>Precio: $XX,XXX</p>
+        <a href="#">Más información</a>
+      </div>
+      
+      <div class="car-card">
+        <h3>Coche 2</h3>
+        <img src="ruta_de_la_imagen_del_coche_2.jpg" alt="Coche 2">
+        <p>Descripción del coche 2.</p>
+        <p>Precio: $XX,XXX</p>
+        <a href="#">Más información</a>
+      </div>
+      
+      <!-- Agrega más coches utilizando divs con la clase "car-card" -->
+    </div>
+  </main>
+  
+  <footer>
+    <p>Derechos de autor &copy; 2023 Venta de Coches. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
+
