@@ -228,7 +228,7 @@ width : 100% !important;
 button#esw-fab{
 height:80px !important;
 width:80px !important;
-background-color: transparent !important;
+background-color: transparent;
 }
 button#esw-fab[aria-expanded="true"]{
 height: 56px !important;
@@ -236,7 +236,7 @@ width: 56px !important;
 bottom: 16px !important;
 }
 .embedded-service #esw-fab.showAnimation{
-animation:channelmenu-rotate-in-2-br-cw 0.5s ease-in both,channelmenu-shadow-pulse 2s infinite !important;
+animation:channelmenu-rotate-in-2-br-cw 0.5s ease-in both,channelmenu-shadow-pulse 2s infinite;
 }
 .embedded-service .fab div[class="icon_fab_container"] {
 width: 68px !important;
@@ -277,7 +277,7 @@ if (isMobileDevice) {} else {
 
 if (!window.embedded_svc || !window.embedded_svc.menu) {
     var s = document.createElement('script');
-		s.setAttribute('src', 'https://psa-customerfirst.my.salesforce.com/embeddedservice/menu/fab.min.js');
+    s.setAttribute('src', 'https://psa-customerfirst--preprod.sandbox.my.salesforce.com/embeddedservice/menu/fab.min.js');
     s.onload = function() {
         initESW(null);
     };
